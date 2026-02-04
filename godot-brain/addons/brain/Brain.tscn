@@ -2,5 +2,31 @@
 
 [ext_resource type="Script" uid="uid://buxs1p6qblym6" path="res://addons/brain/brain.gd" id="1_1xt6d"]
 
-[node name="Brain" type="Node2D" unique_id=1401770271]
+[sub_resource type="QuadMesh" id="QuadMesh_1xt6d"]
+
+[node name="Brain" type="Node2D" unique_id=1401770271 node_paths=PackedStringArray("eyes")]
 script = ExtResource("1_1xt6d")
+eyes = NodePath("Camera2D")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=739530437]
+position = Vector2(0, 13)
+zoom = Vector2(0.75, 0.75)
+
+[node name="1" type="MeshInstance2D" parent="." unique_id=932205777]
+position = Vector2(-508, -266)
+scale = Vector2(-114.70294, -97.32237)
+mesh = SubResource("QuadMesh_1xt6d")
+
+[node name="2" type="MeshInstance2D" parent="." unique_id=1077448821]
+position = Vector2(-504, 259)
+scale = Vector2(-114.70294, -97.32237)
+mesh = SubResource("QuadMesh_1xt6d")
+
+[node name="3" type="MeshInstance2D" parent="." unique_id=1606917153]
+position = Vector2(505.99997, -262)
+scale = Vector2(-114.70294, -97.32237)
+mesh = SubResource("QuadMesh_1xt6d")
+
+[node name="4" type="MeshInstance2D" parent="." unique_id=1383928003]
+scale = Vector2(-114.70294, -97.32237)
+mesh = SubResource("QuadMesh_1xt6d")
