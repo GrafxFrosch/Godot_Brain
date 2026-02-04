@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://byfh5iiqrd6ha"]
+
+[ext_resource type="Script" uid="uid://buxs1p6qblym6" path="res://addons/brain/brain.gd" id="1_1xt6d"]
+
+[node name="Brain" type="Node2D" unique_id=1401770271]
+script = ExtResource("1_1xt6d")
