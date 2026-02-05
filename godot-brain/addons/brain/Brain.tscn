@@ -1,32 +1,278 @@
 [gd_scene format=3 uid="uid://byfh5iiqrd6ha"]
 
 [ext_resource type="Script" uid="uid://buxs1p6qblym6" path="res://addons/brain/brain.gd" id="1_1xt6d"]
+[ext_resource type="Texture2D" uid="uid://cg3nma7rnhvli" path="res://TopDownCharacters/Character_1.png" id="2_nojda"]
+[ext_resource type="Texture2D" uid="uid://cjelakskmwguv" path="res://TopDownCharacters/Character_1_Run.png" id="3_lbaer"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nojda"]
+radius = 31.06445
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c1nb5"]
+atlas = ExtResource("2_nojda")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_888lq"]
+atlas = ExtResource("2_nojda")
+region = Rect2(16, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ar2ae"]
+atlas = ExtResource("2_nojda")
+region = Rect2(32, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wfwpa"]
+atlas = ExtResource("2_nojda")
+region = Rect2(48, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_po7xr"]
+atlas = ExtResource("2_nojda")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t4g42"]
+atlas = ExtResource("2_nojda")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ovduc"]
+atlas = ExtResource("2_nojda")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r65w3"]
+atlas = ExtResource("2_nojda")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tvcxm"]
+atlas = ExtResource("2_nojda")
+region = Rect2(0, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_322rb"]
+atlas = ExtResource("2_nojda")
+region = Rect2(16, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ymi5r"]
+atlas = ExtResource("2_nojda")
+region = Rect2(32, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rwx6c"]
+atlas = ExtResource("2_nojda")
+region = Rect2(48, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vnhy3"]
+atlas = ExtResource("3_lbaer")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_inpgp"]
+atlas = ExtResource("3_lbaer")
+region = Rect2(16, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y3sw6"]
+atlas = ExtResource("3_lbaer")
+region = Rect2(32, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hpvi0"]
+atlas = ExtResource("3_lbaer")
+region = Rect2(48, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8jeln"]
+atlas = ExtResource("3_lbaer")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7keny"]
+atlas = ExtResource("3_lbaer")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fl3ae"]
+atlas = ExtResource("3_lbaer")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_57o4y"]
+atlas = ExtResource("3_lbaer")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jwtpr"]
+atlas = ExtResource("3_lbaer")
+region = Rect2(0, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uygly"]
+atlas = ExtResource("3_lbaer")
+region = Rect2(16, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tr0bn"]
+atlas = ExtResource("3_lbaer")
+region = Rect2(32, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b6rkm"]
+atlas = ExtResource("3_lbaer")
+region = Rect2(48, 32, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_drnyw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c1nb5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_888lq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ar2ae")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wfwpa")
+}],
+"loop": true,
+"name": &"Idle-Down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_po7xr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t4g42")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ovduc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r65w3")
+}],
+"loop": true,
+"name": &"Idle-Hor",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tvcxm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_322rb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ymi5r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rwx6c")
+}],
+"loop": true,
+"name": &"Idle-Up",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vnhy3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_inpgp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y3sw6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hpvi0")
+}],
+"loop": true,
+"name": &"Walk-Down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8jeln")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7keny")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fl3ae")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_57o4y")
+}],
+"loop": true,
+"name": &"Walk-Hor",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jwtpr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uygly")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tr0bn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b6rkm")
+}],
+"loop": true,
+"name": &"Walk-Up",
+"speed": 5.0
+}]
 
 [sub_resource type="QuadMesh" id="QuadMesh_1xt6d"]
 
-[node name="Brain" type="Node2D" unique_id=1401770271 node_paths=PackedStringArray("eyes")]
+[sub_resource type="Curve" id="Curve_lbaer"]
+_data = [Vector2(0.86052406, 0.7028774), 0.0, 0.0, 0, 0]
+point_count = 1
+
+[sub_resource type="Curve" id="Curve_c1nb5"]
+
+[sub_resource type="Curve" id="Curve_888lq"]
+
+[sub_resource type="CurveXYZTexture" id="CurveXYZTexture_ar2ae"]
+curve_x = SubResource("Curve_lbaer")
+curve_y = SubResource("Curve_c1nb5")
+curve_z = SubResource("Curve_888lq")
+
+[node name="Example" type="Node2D" unique_id=2071956222]
+
+[node name="Brain" type="Node2D" parent="." unique_id=1401770271 node_paths=PackedStringArray("eyes", "body", "sprite")]
+position = Vector2(-1, 3)
 script = ExtResource("1_1xt6d")
 eyes = NodePath("Camera2D")
+body = NodePath("Camera2D/CharacterBody2D")
+task = "You are the robot head in the middle of the screen. Locate the RED square and walk to it."
+smooth_movement = true
+speed = 100
+sprite = NodePath("Camera2D/CharacterBody2D/AnimatedSprite2D")
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=739530437]
-position = Vector2(0, 13)
+[node name="Camera2D" type="Camera2D" parent="Brain" unique_id=739530437]
+position = Vector2(0, -1)
 zoom = Vector2(0.75, 0.75)
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="Brain/Camera2D" unique_id=603498179]
+z_index = 5
+
+[node name="Area2D" type="Area2D" parent="Brain/Camera2D/CharacterBody2D" unique_id=1647646955]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Brain/Camera2D/CharacterBody2D/Area2D" unique_id=245311051]
+shape = SubResource("CircleShape2D_nojda")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Brain/Camera2D/CharacterBody2D" unique_id=1928740746]
+texture_filter = 1
+scale = Vector2(3.2471902, 2.923027)
+sprite_frames = SubResource("SpriteFrames_drnyw")
+animation = &"Idle-Down"
 
 [node name="1" type="MeshInstance2D" parent="." unique_id=932205777]
 position = Vector2(-508, -266)
-scale = Vector2(-114.70294, -97.32237)
+rotation = 3.1415927
+scale = Vector2(114.70294, 97.32237)
 mesh = SubResource("QuadMesh_1xt6d")
+texture = SubResource("CurveXYZTexture_ar2ae")
 
 [node name="2" type="MeshInstance2D" parent="." unique_id=1077448821]
 position = Vector2(-504, 259)
-scale = Vector2(-114.70294, -97.32237)
+rotation = 3.1415927
+scale = Vector2(114.70294, 97.32237)
 mesh = SubResource("QuadMesh_1xt6d")
 
 [node name="3" type="MeshInstance2D" parent="." unique_id=1606917153]
 position = Vector2(505.99997, -262)
-scale = Vector2(-114.70294, -97.32237)
+rotation = 3.1415927
+scale = Vector2(114.70294, 97.32237)
 mesh = SubResource("QuadMesh_1xt6d")
 
 [node name="4" type="MeshInstance2D" parent="." unique_id=1383928003]
-scale = Vector2(-114.70294, -97.32237)
+rotation = 3.1415927
+scale = Vector2(114.70294, 97.32237)
 mesh = SubResource("QuadMesh_1xt6d")
